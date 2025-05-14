@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.testimonial-carousel {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  padding: 30px;
+  text-align: center;
+  flex-shrink: 0;
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0 15px;
+}
+
+.testimonial-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.testimonial-card span {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fec7c7;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.nav:hover {
+  background: #555;
+}
+
+.nav svg {
+  display: block;
+  margin: auto;
+  transition: transform 0.3s ease;
+}
+
+.nav:hover svg {
+  transform: scale(1.2);
+}
+
+.nav.prev {
+  left: 10px;
+}
+
+.nav.next {
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .testimonial-card p {
+    font-size: 0.95rem;
+  }
+  .testimonial-card h4 {
+    font-size: 1rem;
+  }
+}

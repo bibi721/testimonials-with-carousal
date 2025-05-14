@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonial Carousel</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <div class="testimonial-carousel">
+    <button class="nav prev" aria-label="Previous testimonial">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+
+    <div class="carousel-track">
+      <div class="testimonial-card active">
+        <img src="https://i.pravatar.cc/150?img=32" alt="Anna">
+        <p>"Swedbank made everything so easy – smooth onboarding and great support!"</p>
+        <h4>Anna Svensson</h4>
+        <span>Product Manager</span>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Jonas">
+        <p>"Their team really cares about quality. Truly impressed!"</p>
+        <h4>Jonas Ek</h4>
+        <span>QA Engineer</span>
+      </div>
+
+      <div class="testimonial-card">
+        <img src="https://i.pravatar.cc/150?img=65" alt="Lisa">
+        <p>"Great service, clear communication, and a product that delivers real value."</p>
+        <h4>Lisa Karlsson</h4>
+        <span>UX Designer</span>
+      </div>
+    </div>
+
+    <button class="nav next" aria-label="Next testimonial">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
